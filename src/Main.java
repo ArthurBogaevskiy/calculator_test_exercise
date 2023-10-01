@@ -18,6 +18,12 @@ public class Main {
         }
         if (a > 10 || b > 10) {
             throw new Exception("Превышен лимит допустимых значений");
+            
+        }if (a == 0 || b == 0) {
+            throw new Exception("Ввод чисел не соответствует допустимым значениям");
+        }
+        if (a < 0 || b < 0) {
+            throw new Exception("Превышен лимит допустимых значений");
         }
 
         int c = 0;
